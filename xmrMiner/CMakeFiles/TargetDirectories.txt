@@ -1,0 +1,9 @@
+/root/xmrMiner/CMakeFiles/install.dir
+/root/xmrMiner/CMakeFiles/list_install_components.dir
+/root/xmrMiner/CMakeFiles/rebuild_cache.dir
+/root/xmrMiner/CMakeFiles/edit_cache.dir
+/root/xmrMiner/CMakeFiles/xmrMinerCuda.dir
+/root/xmrMiner/CMakeFiles/xmrMinerCrypto.dir
+/root/xmrMiner/CMakeFiles/install/local.dir
+/root/xmrMiner/CMakeFiles/xmrMiner.dir
+/root/xmrMiner/CMakeFiles/install/strip.dir

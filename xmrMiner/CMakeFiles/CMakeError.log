@@ -1,0 +1,327 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_06c83/fast"
+/usr/bin/make -f CMakeFiles/cmTC_06c83.dir/build.make CMakeFiles/cmTC_06c83.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06c83.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fPIC    -o CMakeFiles/cmTC_06c83.dir/CheckSymbolExists.c.o   -c /root/xmrMiner/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_06c83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06c83.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC     CMakeFiles/cmTC_06c83.dir/CheckSymbolExists.c.o  -o cmTC_06c83 -rdynamic 
+CMakeFiles/cmTC_06c83.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_06c83.dir/build.make:97: recipe for target 'cmTC_06c83' failed
+make[1]: *** [cmTC_06c83] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_06c83/fast' failed
+make: *** [cmTC_06c83/fast] Error 2
+
+File /root/xmrMiner/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_627f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_627f0.dir/build.make CMakeFiles/cmTC_627f0.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_627f0.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_627f0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_627f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_627f0.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_627f0.dir/CheckFunctionExists.c.o  -o cmTC_627f0 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_627f0.dir/build.make:97: recipe for target 'cmTC_627f0' failed
+make[1]: *** [cmTC_627f0] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_627f0/fast' failed
+make: *** [cmTC_627f0/fast] Error 2
+
+
+Determining if the function syslog.h exists failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_19124/fast"
+/usr/bin/make -f CMakeFiles/cmTC_19124.dir/build.make CMakeFiles/cmTC_19124.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19124.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=syslog.h   -o CMakeFiles/cmTC_19124.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:29: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘.’ token
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c: In function ‘main’:
+<command-line>:0:23: error: ‘syslog’ undeclared (first use in this function)
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: note: each undeclared identifier is reported only once for each function it appears in
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS();
+   ^
+CMakeFiles/cmTC_19124.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_19124.dir/CheckFunctionExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_19124.dir/CheckFunctionExists.c.o] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_19124/fast' failed
+make: *** [cmTC_19124/fast] Error 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8c91c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c91c.dir/build.make CMakeFiles/cmTC_8c91c.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c91c.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_8c91c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘alloca’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_8c91c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c91c.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=alloca    CMakeFiles/cmTC_8c91c.dir/CheckFunctionExists.c.o  -o cmTC_8c91c -rdynamic 
+CMakeFiles/cmTC_8c91c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x24): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8c91c.dir/build.make:97: recipe for target 'cmTC_8c91c' failed
+make[1]: *** [cmTC_8c91c] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8c91c/fast' failed
+make: *** [cmTC_8c91c/fast] Error 2
+
+
+Determining if files sys/endian.h exist failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20e70/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20e70.dir/build.make CMakeFiles/cmTC_20e70.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20e70.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_20e70.dir/CheckIncludeFiles.c.o   -c /root/xmrMiner/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/root/xmrMiner/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:24: fatal error: sys/endian.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_20e70.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_20e70.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_20e70.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_20e70/fast' failed
+make: *** [cmTC_20e70/fast] Error 2
+
+Source:
+/* */
+#include <sys/endian.h>
+
+
+int main(void){return 0;}
+
+Determining if the prototype be32dec exists for HAVE_DECL_BE32DEC failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ebf7a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebf7a.dir/build.make CMakeFiles/cmTC_ebf7a.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebf7a.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ebf7a.dir/CheckPrototypeDefinition.c.o   -c /root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:24: fatal error: sys/endian.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_ebf7a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ebf7a.dir/CheckPrototypeDefinition.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_ebf7a.dir/CheckPrototypeDefinition.c.o] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ebf7a/fast' failed
+make: *** [cmTC_ebf7a/fast] Error 2
+
+
+#include <sys/endian.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef be32dec
+  cmakeRequireSymbol(0, &be32dec);
+#endif
+}
+
+uint32_t be32dec(const void *) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype be32enc exists for HAVE_DECL_BE32ENC failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dac90/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dac90.dir/build.make CMakeFiles/cmTC_dac90.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dac90.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_dac90.dir/CheckPrototypeDefinition.c.o   -c /root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:24: fatal error: sys/endian.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_dac90.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_dac90.dir/CheckPrototypeDefinition.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_dac90.dir/CheckPrototypeDefinition.c.o] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dac90/fast' failed
+make: *** [cmTC_dac90/fast] Error 2
+
+
+#include <sys/endian.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef be32enc
+  cmakeRequireSymbol(0, &be32enc);
+#endif
+}
+
+void be32enc(void *, uint32_t) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype le32dec exists for HAVE_DECL_LE32DEC failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76599/fast"
+/usr/bin/make -f CMakeFiles/cmTC_76599.dir/build.make CMakeFiles/cmTC_76599.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76599.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_76599.dir/CheckPrototypeDefinition.c.o   -c /root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:24: fatal error: sys/endian.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_76599.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_76599.dir/CheckPrototypeDefinition.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_76599.dir/CheckPrototypeDefinition.c.o] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_76599/fast' failed
+make: *** [cmTC_76599/fast] Error 2
+
+
+#include <sys/endian.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef le32dec
+  cmakeRequireSymbol(0, &le32dec);
+#endif
+}
+
+uint32_t le32dec(const void *) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype le32enc exists for HAVE_DECL_LE32ENC failed with the following output:
+Change Dir: /root/xmrMiner/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3a54/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3a54.dir/build.make CMakeFiles/cmTC_c3a54.dir/build
+make[1]: Entering directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3a54.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c3a54.dir/CheckPrototypeDefinition.c.o   -c /root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/root/xmrMiner/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:24: fatal error: sys/endian.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_c3a54.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c3a54.dir/CheckPrototypeDefinition.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c3a54.dir/CheckPrototypeDefinition.c.o] Error 1
+make[1]: Leaving directory '/root/xmrMiner/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3a54/fast' failed
+make: *** [cmTC_c3a54/fast] Error 2
+
+
+#include <sys/endian.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef le32enc
+  cmakeRequireSymbol(0, &le32enc);
+#endif
+}
+
+void le32enc(void *, uint32_t) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
